@@ -100,7 +100,7 @@ try {
 	var tmp = "<!doctype html> \n\
 <html>\n\
 <head>\n\
-<title>Crowe Web2Image</title>\n\
+<title>Web2Image</title>\n\
 <style type='text/css'>\n\
 	#main {\n\
 		border: 1px solid #000000;\n\
