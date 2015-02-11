@@ -1,7 +1,7 @@
 web2image
 =========
 
-PhantomJS tool to convert web pages to screenshots.  This requires the PhantomJS project (http://www.phantomjs.org or https://github.com/ariya/phantomjs/).  Once you have the phantomjs.exe, simply run the JavaScript file using the following arguments: 
+PhantomJS tool to convert web pages to screenshots.  This requires the PhantomJS project (http://phantomjs.org or https://github.com/ariya/phantomjs/).  Once you have the phantomjs.exe, simply run the JavaScript file using the following arguments: 
 
 ```
 Usage: phantomjs.exe --ignore-ssl-errors=yes web2image.js <URL LIST> <OUTFILE>
