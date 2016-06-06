@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Web2Image Parser</title>
+    <link rel="stylesheet" type="text/css" href="parser/css/web2image.css">
+    <script type="text/javascript" src="parser/js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="parser/js/jquery.treetable.js"></script>
+    <link href="parser/css/jquery.treetable.css" rel="stylesheet" type="text/css" />
+    <link href="parser/css/jquery.treetable.theme.default.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="header">
+        <table id="settings_table">
+            <tr><td><b>Web2Image Parser</b></td><td></td></tr>
+            <tr><td>Current Scan:</td><td></td></tr>
+            <tr><td>Websites:</td><td></td></tr>
+        </table>
+    </div>
+
+    <div class='left'>
+        <button type="button" id="expand" onclick="jQuery('#content_table').treetable('expandAll'); return false;">Expand All</a>
+        <button type="button" id="expand" onclick="jQuery('#content_table').treetable('collapseAll'); return false;">Collapse All</a>
+        <button style="float: right; text-align: center; margin: 0;" type="button" id="save_state">Save State</button>
+    </div>
+    <div class='right'>
+        <label for='search_websites'>Search</label>
+        <input type="text" name="search_websites" size=40 id="search_websites">
+    </div>
+
+    <div class="container">
+    <div class="collapsible" id="div-websites"><span class='twisty'></span></div>
+    <div class='content'>
+        <table id="content_table" class="treetable">
+             <colgroup>
+                 <col style="width: 10%"/>
+                 <col style="width: 9%"/>
+                 <col style="width: 9%"/>
+                 <col style="width: 8%"/>
+                 <col style="width: 9%"/>
+                 <col style="width: 20%"/>
+                 <col style="width: 15%"/>
+                 <col style="width: 15%"/>
+            </colgroup>
+            <thead>
+                <tr>
+                     <th></th>
+                     <th>Base URL</th>
+                     <th>Final URL</th>
+                     <th>Title</th>
+                     <th>Category</th>
+                     <th>Image</th>
+                     <th id="headers">Headers</th>
+                     <th>Comments</th>
+                </tr>
+            </thead>
+            <tbody class="treelist">
+            </tbody>
+        </table>
+    </div>
+
+    <div id="drop">
+        Drop JSON output file here<br>
+    </div>
+
+    <div id="footer">
+        <a href="#top">Back to top of page</a>
+    </div>
+
+<script type="text/javascript" src="parser/js/web2image.js"></script>
+</body>
+</html>
