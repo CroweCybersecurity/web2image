@@ -1,0 +1,18 @@
+Tomcat Manager,Title,\b(Tomcat)\b
+Default Apache,Title,\b(Apache.*?Default)\b
+Default IIS,Title,\b(IIS\d+|IIS)\b
+Printer,Title,\b(HP|Xerox|Ricoh|Printer|Phaser|Konica|Epson|Lexmark|Brother)\b
+Networking Device,Title,\b(Cisco|Check\s?Point|Bomgar|Gateway|Pulse|SonicWall)\b
+Vsphere,Title,\b(Vmware|Vsphere)\b
+Logging,Title,\b(AlienVault|Splunk)\b
+Mail,Title,\b(OWA|Outlook)\b
+Login Portal,Title,\b(Login|Log\s?On|Access)\b
+Unauthorized,Title,\b(401\sAuthorization\sRequired)\b
+Invalid URL,Title,\b(Invalid)\b
+Apache Service,Server,\b(Apache|Apache-Coyote\/\d+\.\d+)\b
+IIS,Server,\b(Microsoft-IIS\d+|Microsoft-IIS\/\d+\.\d+|Microsoft)\b
+Nginx,Server,\b(nginx)\b
+Networking Device,Server,\b(Cisco)\b
+Printer,Server,\b(Canon|Alegro|Virata-EmWeb)\b
+Lighttpd,Server,\b(Lighttpd)\b
+Unknown,Title,
