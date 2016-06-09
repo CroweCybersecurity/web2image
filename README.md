@@ -4,9 +4,9 @@ Go tool to convert web pages to screenshots and categorize the websites.
 
 ### Prerequisite
 
-Install WebKit2Png
+Install WebKit2Png Dependencies
 ```
-apt-get install python-qt4 libqt4-webkit xvfb
+apt-get install python-qt4 libqtwebkit4 xvfb
 pip install webkit2png
 ```
 
