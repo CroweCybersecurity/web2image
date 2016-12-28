@@ -39,7 +39,7 @@ Usage of ./web2image:
 ### Example
 
 ```
-> web2image -list=websites.txt -out=example.json --verbose=true
+> web2image -list=websites.txt -out=example.json -verbose=true
              _    ___ _
  __ __ _____| |__|_  |_)_ __  __ _ __ _ ___
  \ V  V / -_) '_ \/ /| | '  \/ _' / _' / -_)
@@ -65,6 +65,14 @@ Categorizing Group: Apache2 Debian Default Page It works
 Categorizing Group: Google
 Categorization done
 
+```
+
+### Note
+
+If using within a screen and images are empty, prefix the command with the following:
+
+```
+xvfb-run --server-args="-screen 0, 1024x768x24" ./web2image -list=websites.txt -out=example.json -verbose=true
 ```
 
 ### Parser
